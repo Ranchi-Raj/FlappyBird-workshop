@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #196f45;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    font-size: 50px;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#game{
+    width: 800px;
+    height: 500px;
+    border: 5px solid black;
+    margin: auto;
+    overflow: hidden;
+    /* background-image: linear-gradient(45deg, green, lightgreen); */
+    background-color: #279427;
+}
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 50px;
+    height: 180px;
+    /* background-color: white; */
+    background-color: #279427;
+
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}
+#character{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    background-image: url("./flappy.png");
+    position: absolute;
+    top: 200px;
+    border-radius: 50%;
+}
